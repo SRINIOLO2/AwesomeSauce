@@ -10,21 +10,25 @@
 using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour 
 {
 
-	[SerializeField]private float patrolSpeed = 2f;
-	[SerializeField]private float patrolWaitTime = 1f;
+	[SerializeField]private float patrolSpeed = 5f;
 	[SerializeField]private Transform [] patrolWayPoints;
+	[SerializeField]private NavMeshAgent nav = null;
+	[SerializeField]private int curWaypoint = 0;
+	[SerializeField]private int maxWaypoint;
+	[SerializeField]private float minWaypointDistance = 0.1f;
 
-	[SerializeField]private NavMeshAgent nav;
-	[SerializeField]private float patrolTimer;
-	[SerializeField]private int wayPointIndex;
 
 
 	private void Awake()
 	{
-		nav = GetComponent<NavMeshAgent> ();
+		nav = gameObject.GetComponent<NavMeshAgent> ();
+
+
+		maxWaypoint = patrolWayPoints.Length - 1;
 	}
 
 	private void Update()
@@ -36,30 +40,25 @@ public class EnemyAI : MonoBehaviour
 	{
 		nav.speed = patrolSpeed;
 
-		if ( nav.remainingDistance < nav.stoppingDistance) 
+		Vector3 tempLocalPosition;
+		Vector3 tempWayPointPosition;
+
+		tempLocalPosition = transform.position;
+		tempLocalPosition.y = 0f;
+
+		tempWayPointPosition = patrolWayPoints [curWaypoint].position;
+		tempWayPointPosition.y = 0f;
+
+		if (Vector3.Distance (tempLocalPosition, tempWayPointPosition) <= minWaypointDistance) 
 		{
-						patrolTimer += Time.deltaTime;
+			if(curWaypoint == maxWaypoint)
+				curWaypoint =0;
+			else
+				curWaypoint ++;
+		}
+		nav.SetDestination (patrolWayPoints [curWaypoint].position);
 
 
-			if (patrolTimer >= patrolWaitTime) 
-			{
-				if (wayPointIndex == patrolWayPoints.Length - 1)
-					wayPointIndex = 0;
-				else
-				wayPointIndex ++;
-
-
-				patrolTimer = 0;
-
-			}
-
-		} 
-		else
-						
-			patrolTimer = 0;
-
-
-		nav.destination = patrolWayPoints[wayPointIndex].position;
 	}
 
 }

@@ -31,13 +31,17 @@ public class Player : MonoBehaviour
 	public float       sensitivityX = 15F;
 	public float       sensitivityY = 15F;
 
-	public int Score = 0;
+	public int Keys = 0;
 
-	public int maxScore = 15;
+	public int maxKeys = 6;
 
-	//public GameObject guiUpdater;
+	public GameObject guiUpdater;
 
-	//private GUIUpdater updater;
+	private GameObject LaserTrap1;
+
+
+
+	private GUIUpdater updater;
 	
 
 	// Use this for initialization
@@ -47,16 +51,20 @@ public class Player : MonoBehaviour
 		// references the character controller
 		controller = GetComponent <CharacterController> ();
 		//finds the game object with the GUIUpdater script
-		//guiUpdater = GameObject.Find("ScoreText");
+		guiUpdater = GameObject.Find("KeyText");
 		// makes it so that you can update the GUIUpdater
-		//updater = guiUpdater.GetComponent<GUIUpdater> ();
+		updater = guiUpdater.GetComponentInParent<GUIUpdater> ();
+
+		LaserTrap1 = GameObject.Find ("LaserTrap1");
+
+
 	}
 
 	// Update is called once per frame
 	private void Update () 
 	{
 
-		Screen.showCursor = false;
+
 		// Assume no input
 		velocity.x = 0;
 		velocity.z = 0;
@@ -75,21 +83,21 @@ public class Player : MonoBehaviour
 
 
 		// you have to be grounded
-		if(controller.isGrounded)
-		{
+		//if(controller.isGrounded)
+		//{
             // press space to jump
-	    	if(Input.GetButtonDown("Jump"))               
-		  	{
-			    print ("Jumping");
+	    //	if(Input.GetButtonDown("Jump"))               
+		 // 	{
+		//	    print ("Jumping");
 
-                velocity.y = jumpSpeed;
+          //      velocity.y = jumpSpeed;
 			
-		   	}
-		  else
-			{
-				velocity.y = 0;
-			}
-	    }
+		  // 	}
+		 // else
+		//	{
+				//velocity.y = 0;
+			//}
+	   // }
 		 
 		velocity += Physics.gravity * Time.deltaTime;
 
@@ -109,6 +117,16 @@ public class Player : MonoBehaviour
 		rotationY = Mathf.Clamp (rotationY,  minimumY, maximumY);
 		
 		playerCamera.transform.localEulerAngles = new Vector3(-rotationY, playerCamera.transform.localEulerAngles.y, 0);
+
+		if (Input.GetKeyDown (KeyCode.LeftShift))
+		{
+			speed = 25;
+		}
+		if(Input.GetKeyUp(KeyCode.LeftShift))
+		{
+			speed = 10;
+		}
+
 	}
 
 	/// <summary>
@@ -117,7 +135,7 @@ public class Player : MonoBehaviour
 	/// <param name="other">Other.</param>
   private void OnTriggerEnter(Collider other)
     {
-        print("hit");
+       // print("hit");
 		// if you walk into an object that is tagged with Killzone you will die
         if (other.tag == "Killzone")
         {
@@ -127,42 +145,37 @@ public class Player : MonoBehaviour
         }
 
 		// if you walk into an object that is tagged with points will get a point
-		if (other.tag == "Points")
+		if (other.tag == "Key")
 		{
-			// adds 1 to score
-			Score++;
-			//updates the score text when you get a point
-			//updater.UpdateScore(Score);
+			// adds 1 to key
+			Keys++;
+			//updates the key text when you get a point
+			updater.UpdateKeys(Keys);
 
 		}
 		//if you walk into an object that is tagged with Damage you will lose a point
-		if (other.tag == "Damage") 
-		{
-			// subtracts 1 point from score
-			Score --;
-			// updates the score text when you lose a point
-			//updater.UpdateScore(Score);
-		}
+
 		// if you walk into WinZone trigger you will go to the win scene
 		if (other.tag == "WinZone")
 		{
 			// if you get max points you will win if you have less you will lose
-			if(Score == maxScore)
-			{
-				print ("Win");
-				Application.LoadLevel("Win");
-			}
-			else
-			{
-				Application.LoadLevel("GameOver");
-			}
+
+
 
 		}
-
-		if (other.tag == "SpeedBoost")
+		if (other.tag == "LaserTrapTrigger1") 
 		{
-			speed = speed + speedBoost;
+			if(Keys == 1)
+			{
+				print("OFF");
+				LaserTrap1.SetActive(false);
+
+
+			}
+
+				
 		}
+
     }
 
 
