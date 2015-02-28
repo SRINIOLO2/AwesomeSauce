@@ -33,38 +33,67 @@ public class Player : MonoBehaviour
 
 	public int Keys = 0;
 
-	public int maxKeys = 6;
+	public int maxKeys = 7;
+
+	public float Timer = 0f;
 
 	public GameObject guiUpdater;
-
-	private GameObject LaserTrap1;
-
-
+	public GameObject guiUpdater2;
 
 	private GUIUpdater updater;
-	
+
+	private GameObject LaserTrap0;
+	private GameObject LaserTrap1;
+	private GameObject LaserTrap2;
+	private GameObject LaserTrap3;
+	private GameObject LaserTrap4;
+	private GameObject LaserTrap5;
+	private GameObject LaserTrap6;
+	private GameObject LaserTrap7;
+	private GameObject LaserTrap8;
+	private GameObject LaserTrap9;
+	private GameObject LaserTrap10;
+	private GameObject LaserTrap11;
+	private GameObject LaserTrap12;
+	private GameObject LaserTrap13;
 
 	// Use this for initialization
 	private void Start () 
-	{
 
+	{   LaserTrap0 = GameObject.Find ("LaserTrap0");
+		LaserTrap0.SetActive(false);
 		// references the character controller
 		controller = GetComponent <CharacterController> ();
 		//finds the game object with the GUIUpdater script
 		guiUpdater = GameObject.Find("KeyText");
+
+		guiUpdater2 = GameObject.Find ("TimerText");
 		// makes it so that you can update the GUIUpdater
 		updater = guiUpdater.GetComponentInParent<GUIUpdater> ();
+		updater = guiUpdater2.GetComponentInParent<GUIUpdater> ();
+
+
 
 		LaserTrap1 = GameObject.Find ("LaserTrap1");
-
-
+		LaserTrap2 = GameObject.Find ("LaserTrap2");
+		LaserTrap3 = GameObject.Find ("LaserTrap3");
+		LaserTrap4 = GameObject.Find ("LaserTrap4");
+		LaserTrap5 = GameObject.Find ("LaserTrap5");
+		LaserTrap6 = GameObject.Find ("LaserTrap6");
+		LaserTrap7 = GameObject.Find ("LaserTrap7");
+		LaserTrap8 = GameObject.Find ("LaserTrap8");
+		LaserTrap9 = GameObject.Find ("LaserTrap9");
+		LaserTrap10 = GameObject.Find ("LaserTrap10");
+		LaserTrap11 = GameObject.Find ("LaserTrap11");
+		LaserTrap12 = GameObject.Find ("LaserTrap12");
+		LaserTrap13 = GameObject.Find ("LaserTrap13");
 	}
 
 	// Update is called once per frame
 	private void Update () 
 	{
 
-
+		TimerUpdater ();
 		// Assume no input
 		velocity.x = 0;
 		velocity.z = 0;
@@ -129,6 +158,12 @@ public class Player : MonoBehaviour
 
 	}
 
+	private void TimerUpdater()
+	{
+		Timer = ( Timer +1  * Time.deltaTime);
+		updater.UpdateTimer (Timer);
+	}
+
 	/// <summary>
 	/// When you walk into a trigger one of the events will happen
 	/// </summary>
@@ -158,23 +193,104 @@ public class Player : MonoBehaviour
 		// if you walk into WinZone trigger you will go to the win scene
 		if (other.tag == "WinZone")
 		{
-			// if you get max points you will win if you have less you will lose
 
+			Application.LoadLevel("Win");
 
 
 		}
+		if (other.tag == "LaserTrap")
+		{
+			print ("Die");
+			Application.LoadLevel("GameOver");
+		}
+
 		if (other.tag == "LaserTrapTrigger1") 
 		{
+
+
 			if(Keys == 1)
 			{
 				print("OFF");
 				LaserTrap1.SetActive(false);
+
+				LaserTrap0.SetActive(true);
 
 
 			}
 
 				
 		}
+		
+		if (other.tag == "LaserTrapTrigger2") 
+		{
+			if(Keys >= 2)
+			{
+				print("OFF");
+				LaserTrap1.SetActive(true);
+				LaserTrap2.SetActive(false);
+
+			}
+			if(Keys == 6)
+			{
+				LaserTrap2.SetActive(true);
+			}
+			
+			
+		}
+		if (other.tag == "LaserTrapTrigger3") 
+		{
+			if(Keys == 3)
+			{
+				print("OFF");
+				LaserTrap2.SetActive(true);
+				LaserTrap3.SetActive(false);
+				
+			}
+			
+			
+		}
+		if (other.tag == "LaserTrapTrigger4") 
+		{
+			if(Keys == 4)
+			{
+				print("OFF");
+				LaserTrap3.SetActive(true);
+				LaserTrap4.SetActive(false);
+			}
+			
+			
+		}
+		if (other.tag == "LaserTrapTrigger5") 
+		{
+			if(Keys == 6)
+			{
+				print("OFF");
+				LaserTrap4.SetActive(true);
+				LaserTrap5.SetActive(false);
+				LaserTrap6.SetActive(false);
+				LaserTrap7.SetActive(false);
+				LaserTrap8.SetActive(false);
+				LaserTrap9.SetActive(false);
+				LaserTrap10.SetActive(false);
+				LaserTrap11.SetActive(false);
+				LaserTrap12.SetActive(false);
+				LaserTrap1.SetActive(false);
+			}
+			
+			
+		}
+		if (other.tag == "EnemyLight") 
+		{
+			print ("Die");
+			Application.LoadLevel("GameOver");
+				
+		}
+
+		if (Keys == maxKeys) 
+		{
+			LaserTrap13.SetActive(false);
+		}
+
 
     }
 
