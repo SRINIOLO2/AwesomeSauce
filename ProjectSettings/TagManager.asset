@@ -7,14 +7,6 @@ TagManager:
   - LaserTrapTrigger1
   - Key
   - FlashLight
-  - LaserTrap
-  - LaserTrap1
-  - WinZone
-  - LaserTrapTrigger2
-  - LaserTrapTrigger3
-  - LaserTrapTrigger4
-  - LaserTrapTrigger5
-  - EnemyLight
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

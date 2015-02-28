@@ -49,11 +49,7 @@
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\FlashLight.cs" />
      <Compile Include="Assets\Scripts\GUIUpdater.cs" />
-     <Compile Include="Assets\Scripts\InstructionsBtn.cs" />
-     <Compile Include="Assets\Scripts\KeySpawn.cs" />
-     <Compile Include="Assets\Scripts\MainMenuBtn.cs" />
      <Compile Include="Assets\Scripts\PickUp.cs" />
-     <Compile Include="Assets\Scripts\PlayBtn.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
