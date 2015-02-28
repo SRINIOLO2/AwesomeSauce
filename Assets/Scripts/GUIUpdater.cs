@@ -12,6 +12,8 @@ using UnityEngine.UI;
 public class GUIUpdater : MonoBehaviour 
 {
 	public Text KeyText;
+
+	public Text TimerText;
 	//player script
 	private Player PlayerScript;
 
@@ -24,6 +26,10 @@ public class GUIUpdater : MonoBehaviour
 	{	
 		//what the text says
 		KeyText.text = ("Keys:" + Keys.ToString());
+	}
+	public void UpdateTimer(float Timer)
+	{
+		TimerText.text = ("Timer:" + Timer.ToString ());
 	}
 
 }
