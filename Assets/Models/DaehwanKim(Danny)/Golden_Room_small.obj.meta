@@ -1,15 +1,40 @@
 fileFormatVersion: 2
-guid: fcc6a95eee9a67a4e913ee14a6def7cc
+guid: dff78e3c4c64ef544b81001959345f29
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: polySurface450
+    100002: polySurface3156_polySurface3991
+    100004: polySurface3990_polySurface3156
+    100006: polySurface4382
+    100008: polySurface4385
+    100010: polySurface4738
+    100012: polySurface4793
     400000: //RootNode
-    400002: polySurface450
-    2300000: polySurface450
-    3300000: polySurface450
-    4300000: polySurface450
+    400002: polySurface3156_polySurface3991
+    400004: polySurface3990_polySurface3156
+    400006: polySurface4382
+    400008: polySurface4385
+    400010: polySurface4738
+    400012: polySurface4793
+    2300000: polySurface3156_polySurface3991
+    2300002: polySurface3990_polySurface3156
+    2300004: polySurface4382
+    2300006: polySurface4385
+    2300008: polySurface4738
+    2300010: polySurface4793
+    3300000: polySurface3156_polySurface3991
+    3300002: polySurface3990_polySurface3156
+    3300004: polySurface4382
+    3300006: polySurface4385
+    3300008: polySurface4738
+    3300010: polySurface4793
+    4300000: polySurface3156_polySurface3991
+    4300002: polySurface3990_polySurface3156
+    4300004: polySurface4382
+    4300006: polySurface4385
+    4300008: polySurface4738
+    4300010: polySurface4793
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -19,6 +44,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
