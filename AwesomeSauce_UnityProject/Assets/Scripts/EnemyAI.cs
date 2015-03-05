@@ -14,7 +14,7 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour 
 {
 
-	[SerializeField]private float patrolSpeed = 5f;
+	[SerializeField]private float patrolSpeed = 10f;
 	[SerializeField]private Transform [] patrolWayPoints;
 	[SerializeField]private NavMeshAgent nav = null;
 	[SerializeField]private int curWaypoint = 0;

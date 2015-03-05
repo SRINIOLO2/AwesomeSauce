@@ -6,7 +6,7 @@ public class PlayBtn : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		Application.LoadLevel ("test1");
+		Application.LoadLevel ("Lvl!");
 	}
 
 

@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     public float jumpSpeed = 3f;
 
-	public float speedBoost = 5f;
+	public float speedBoost = 10f;
 
 	public GameObject  playerCamera = null;
 
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 
 	public int Keys = 0;
 
-	public int maxKeys = 7;
+	public int maxKeys = 8;
 
 	public float Timer = 0f;
 
@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
 	private GameObject LaserTrap11;
 	private GameObject LaserTrap12;
 	private GameObject LaserTrap13;
-
+	private GameObject LaserTrap14;
 	// Use this for initialization
 	private void Start () 
 
@@ -87,6 +87,7 @@ public class Player : MonoBehaviour
 		LaserTrap11 = GameObject.Find ("LaserTrap11");
 		LaserTrap12 = GameObject.Find ("LaserTrap12");
 		LaserTrap13 = GameObject.Find ("LaserTrap13");
+		LaserTrap14 = GameObject.Find ("LaserTrap14");
 	}
 
 	// Update is called once per frame
@@ -112,22 +113,22 @@ public class Player : MonoBehaviour
 
 
 		// you have to be grounded
-		//if(controller.isGrounded)
-		//{
+		/*if(controller.isGrounded)
+		{
             // press space to jump
-	    //	if(Input.GetButtonDown("Jump"))               
-		 // 	{
+	    	if(Input.GetButtonDown("Jump"))               
+		 	{
 		//	    print ("Jumping");
 
-          //      velocity.y = jumpSpeed;
+               velocity.y = jumpSpeed;
 			
-		  // 	}
-		 // else
-		//	{
-				//velocity.y = 0;
-			//}
-	   // }
-		 
+		  	}
+		  else
+		   {
+				velocity.y = 0;
+		   }
+	   }
+		*/ 
 		velocity += Physics.gravity * Time.deltaTime;
 
 		// Apply all user variable to motion
@@ -149,13 +150,13 @@ public class Player : MonoBehaviour
 
 		if (Input.GetKeyDown (KeyCode.LeftShift))
 		{
-			speed = 25;
+			speed = 15;
 		}
 		if(Input.GetKeyUp(KeyCode.LeftShift))
 		{
 			speed = 10;
 		}
-
+       
 	}
 
 	private void TimerUpdater()
@@ -255,16 +256,27 @@ public class Player : MonoBehaviour
 			{
 				print("OFF");
 				LaserTrap3.SetActive(true);
-				LaserTrap4.SetActive(false);
+				LaserTrap13.SetActive(false);
 			}
 			
 			
 		}
 		if (other.tag == "LaserTrapTrigger5") 
 		{
-			if(Keys == 6)
+			if(Keys == 5)
 			{
 				print("OFF");
+				LaserTrap13.SetActive(true);
+				LaserTrap4.SetActive(false);
+
+			}
+			
+			
+		}
+		if (other.tag == "LaserTrapTrigger6")
+		{
+			if(Keys == 7)
+			{
 				LaserTrap4.SetActive(true);
 				LaserTrap5.SetActive(false);
 				LaserTrap6.SetActive(false);
@@ -275,9 +287,9 @@ public class Player : MonoBehaviour
 				LaserTrap11.SetActive(false);
 				LaserTrap12.SetActive(false);
 				LaserTrap1.SetActive(false);
+
 			}
-			
-			
+				
 		}
 		if (other.tag == "EnemyLight") 
 		{
@@ -288,7 +300,7 @@ public class Player : MonoBehaviour
 
 		if (Keys == maxKeys) 
 		{
-			LaserTrap13.SetActive(false);
+			LaserTrap14.SetActive(false);
 		}
 
 
