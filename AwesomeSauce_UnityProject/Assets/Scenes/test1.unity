@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 19400000, guid: d8566b42eb6928c41843dafb2408089e, type: 2}
 --- !u!1 &17611278
 GameObject:
@@ -2823,8 +2822,8 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  ignoreReversedGraphics: 1
+  blockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -9123,7 +9122,7 @@ Transform:
   - {fileID: 1695179173}
   - {fileID: 1534959769}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &925394792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9347,7 +9346,7 @@ Transform:
   - {fileID: 533756125}
   - {fileID: 680237244}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!95 &961486052
 Animator:
   serializedVersion: 3
@@ -15469,9 +15468,9 @@ Light:
   serializedVersion: 3
   m_Type: 0
   m_Color: {r: 1, g: .989452362, b: .617647052, a: 1}
-  m_Intensity: 3
-  m_Range: 1.86000001
-  m_SpotAngle: 54.9000015
+  m_Intensity: 3.5999999
+  m_Range: 15
+  m_SpotAngle: 41
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
