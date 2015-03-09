@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 97a28f34143c5a84a9b3337b8b6d6d57
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: back
+    100002: Base
+    100004: Hip
+    100006: L_Ankle
+    100008: L_Clav
+    100010: L_Elbow
+    100012: L_Foot
+    100014: L_Knee
+    100016: L_Shoulder
+    100018: L_Thigh
+    100020: L_Toe
+    100022: L_Wrist
+    100024: Neck
+    100026: R_Ankle
+    100028: R_Clav
+    100030: R_Elbow
+    100032: R_Foot
+    100034: R_Knee
+    100036: R_Shoulder
+    100038: R_Thigh
+    100040: R_Toe
+    100042: R_Wrist
+    100044: Root
+    100046: Spine1
+    100048: Spine2
+    100050: Spine3
+    100052: //RootNode
+    400000: back
+    400002: Base
+    400004: Hip
+    400006: L_Ankle
+    400008: L_Clav
+    400010: L_Elbow
+    400012: L_Foot
+    400014: L_Knee
+    400016: L_Shoulder
+    400018: L_Thigh
+    400020: L_Toe
+    400022: L_Wrist
+    400024: Neck
+    400026: R_Ankle
+    400028: R_Clav
+    400030: R_Elbow
+    400032: R_Foot
+    400034: R_Knee
+    400036: R_Shoulder
+    400038: R_Thigh
+    400040: R_Toe
+    400042: R_Wrist
+    400044: Root
+    400046: Spine1
+    400048: Spine2
+    400050: Spine3
+    400052: //RootNode
+    7400000: cop_walk
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: cop_walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back
+        weight: 1
+      - path: Base
+        weight: 1
+      - path: Base/Hip
+        weight: 1
+      - path: Base/Hip/L_Thigh
+        weight: 1
+      - path: Base/Hip/L_Thigh/L_Knee
+        weight: 1
+      - path: Base/Hip/L_Thigh/L_Knee/L_Ankle
+        weight: 1
+      - path: Base/Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Base/Hip/L_Thigh/L_Knee/L_Ankle/L_Foot/L_Toe
+        weight: 1
+      - path: Base/Hip/R_Thigh
+        weight: 1
+      - path: Base/Hip/R_Thigh/R_Knee
+        weight: 1
+      - path: Base/Hip/R_Thigh/R_Knee/R_Ankle
+        weight: 1
+      - path: Base/Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Base/Hip/R_Thigh/R_Knee/R_Ankle/R_Foot/R_Toe
+        weight: 1
+      - path: Base/Root
+        weight: 1
+      - path: Base/Root/Spine1
+        weight: 1
+      - path: Base/Root/Spine1/Spine2
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/L_Clav
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/L_Clav/L_Shoulder
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/L_Clav/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/L_Clav/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/Neck
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/R_Clav
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/R_Clav/R_Shoulder
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/R_Clav/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Base/Root/Spine1/Spine2/Spine3/R_Clav/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Base
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

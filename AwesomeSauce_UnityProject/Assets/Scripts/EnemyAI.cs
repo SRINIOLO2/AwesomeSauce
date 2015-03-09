@@ -27,6 +27,7 @@ public class EnemyAI : MonoBehaviour
 	{
 		nav = gameObject.GetComponent<NavMeshAgent> ();
 
+	
 
 		maxWaypoint = patrolWayPoints.Length - 1;
 	}
@@ -34,6 +35,7 @@ public class EnemyAI : MonoBehaviour
 	private void Update()
 	{
 		Patrolling ();
+
 	}
 
 	private void Patrolling()

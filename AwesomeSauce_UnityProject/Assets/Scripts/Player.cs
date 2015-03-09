@@ -194,8 +194,11 @@ public class Player : MonoBehaviour
 		// if you walk into WinZone trigger you will go to the win scene
 		if (other.tag == "WinZone")
 		{
+			if(Keys == maxKeys)
+			{
+				Application.LoadLevel("Win");
+			}
 
-			Application.LoadLevel("Win");
 
 
 		}

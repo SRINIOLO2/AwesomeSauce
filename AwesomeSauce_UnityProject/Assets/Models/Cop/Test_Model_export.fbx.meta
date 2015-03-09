@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: 73e2afcb457a8ac47804a7e4bc65366f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: back
+    100002: Base
+    100004: Hip
+    100006: L_Ankle
+    100008: L_Clav
+    100010: L_Elbow
+    100012: L_Foot
+    100014: L_Knee
+    100016: L_Shoulder
+    100018: L_Thigh
+    100020: L_Toe
+    100022: L_Wrist
+    100024: M_Security_Guard
+    100026: Neck
+    100028: R_Ankle
+    100030: R_Clav
+    100032: R_Elbow
+    100034: R_Foot
+    100036: R_Knee
+    100038: R_Shoulder
+    100040: R_Thigh
+    100042: R_Toe
+    100044: R_Wrist
+    100046: Root
+    100048: Spine1
+    100050: Spine2
+    100052: Spine3
+    100054: //RootNode
+    400000: back
+    400002: Base
+    400004: Hip
+    400006: L_Ankle
+    400008: L_Clav
+    400010: L_Elbow
+    400012: L_Foot
+    400014: L_Knee
+    400016: L_Shoulder
+    400018: L_Thigh
+    400020: L_Toe
+    400022: L_Wrist
+    400024: M_Security_Guard
+    400026: Neck
+    400028: R_Ankle
+    400030: R_Clav
+    400032: R_Elbow
+    400034: R_Foot
+    400036: R_Knee
+    400038: R_Shoulder
+    400040: R_Thigh
+    400042: R_Toe
+    400044: R_Wrist
+    400046: Root
+    400048: Spine1
+    400050: Spine2
+    400052: Spine3
+    400054: //RootNode
+    4300000: M_Security_Guard
+    9500000: //RootNode
+    13700000: M_Security_Guard
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Base
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

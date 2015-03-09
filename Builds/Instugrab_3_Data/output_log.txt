@@ -1,0 +1,50 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6900 Series (ID=0x6719)
+    Vendor:   ATI
+    VRAM:     2027 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.081 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_3_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 1.665736 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 143.
+Total: 7.982867 ms (FindLiveObjects: 0.005103 ms CreateObjectMapping: 0.005703 ms MarkObjects: 0.051632 ms  DeleteObjects: 7.532587 ms)
+
+UnloadTime: 0.385439 ms
+The AnimationClip 'cop_walk' used by the Animation component 'Enemy' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 989.
+Total: 0.603675 ms (FindLiveObjects: 0.034521 ms CreateObjectMapping: 0.009906 ms MarkObjects: 0.147391 ms  DeleteObjects: 0.032420 ms)
+
+OFF
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+

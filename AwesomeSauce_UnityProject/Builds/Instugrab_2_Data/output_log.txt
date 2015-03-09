@@ -1,0 +1,114 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6900 Series (ID=0x6719)
+    Vendor:   ATI
+    VRAM:     2027 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Salvatore\Desktop\AwesomeSauceBeta\AwesomeSauce\Builds\Instugrab_2_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 1.704460 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 143.
+Total: 3.944154 ms (FindLiveObjects: 0.005403 ms CreateObjectMapping: 0.005403 ms MarkObjects: 0.050731 ms  DeleteObjects: 3.504981 ms)
+
+UnloadTime: 0.211031 ms
+The AnimationClip 'cop_walk' used by the Animation component 'Enemy' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 989.
+Total: 0.601274 ms (FindLiveObjects: 0.037823 ms CreateObjectMapping: 0.009906 ms MarkObjects: 0.147992 ms  DeleteObjects: 0.032420 ms)
+
+OFF
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OFF
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OFF
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OFF
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+OFF
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+UnloadTime: 1.917893 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 167.
+Total: 1.362848 ms (FindLiveObjects: 0.006904 ms CreateObjectMapping: 0.008405 ms MarkObjects: 0.082551 ms  DeleteObjects: 0.854932 ms)
+
+UnloadTime: 0.295684 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 165.
+Total: 0.438873 ms (FindLiveObjects: 0.006303 ms CreateObjectMapping: 0.006003 ms MarkObjects: 0.075647 ms  DeleteObjects: 0.014108 ms)
+
+UnloadTime: 0.258460 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 152.
+Total: 6.385273 ms (FindLiveObjects: 0.005703 ms CreateObjectMapping: 0.006604 ms MarkObjects: 0.072945 ms  DeleteObjects: 5.954805 ms)
+
+UnloadTime: 0.218535 ms
+The AnimationClip 'cop_walk' used by the Animation component 'Enemy' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 992.
+Total: 0.600973 ms (FindLiveObjects: 0.034821 ms CreateObjectMapping: 0.011407 ms MarkObjects: 0.167504 ms  DeleteObjects: 0.030318 ms)
+
+Die
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+UnloadTime: 1.529451 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 165.
+Total: 7.078104 ms (FindLiveObjects: 0.006904 ms CreateObjectMapping: 0.007504 ms MarkObjects: 0.080149 ms  DeleteObjects: 6.635028 ms)
+
+UnloadTime: 0.283976 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 165.
+Total: 0.447878 ms (FindLiveObjects: 0.006303 ms CreateObjectMapping: 0.007204 ms MarkObjects: 0.077148 ms  DeleteObjects: 0.014108 ms)
+
